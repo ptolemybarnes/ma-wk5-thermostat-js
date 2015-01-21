@@ -4,14 +4,14 @@ Thermostat.prototype.temperature     = 20;
 
 Thermostat.prototype.minTemp      = 10;
 
-Thermostat.prototype.maxTemp    = function() {
-  if (this.isPowerSavingOn)
-    return 25;
-  else
-    return 32;
+Thermostat.prototype.maxTemp    = function(){
+  if (this.isPowerSavingOn) {
+         return 25;
+  }
+  return 32;
 };
 
-Thermostat.prototype.isPowerSavingOn  = false;
+Thermostat.prototype.isPowerSavingOn   = false;
 
 Thermostat.prototype.increaseTempBy = function(amount) {
   var newTemperature = this.temperature + amount;
@@ -33,4 +33,15 @@ Thermostat.prototype.regulateTemp = function(temp) {
     throw Error('Temperature cannot go above ' + this.maxTemp + '.');
   }
 };
+
+Thermostat.prototype.resetButton = function() {
+  this.temperature = 20;
+};
+
+
+
+
+
+
+
 

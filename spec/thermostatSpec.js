@@ -43,6 +43,14 @@ describe("Thermostat", function() {
       expect(thermostat.temperature).toBe(14);
     });
 
+    it("be reset to 20", function() {
+      thermostat.temperature = 30;
+
+      thermostat.resetButton();
+
+      expect(thermostat.temperature).toBe(20);
+    });
+
     it('not go below 10', function() {
       expect( function(){ thermostat.decreaseTempBy(12); }).toThrowError("Temperature cannot go below 10.");
     });
@@ -51,8 +59,15 @@ describe("Thermostat", function() {
   describe("when power saving mode", function() {
 
     it("is off, max temperature is 32 degrees", function() {
-      expect(thermostat.maxTemp).toBe(32);
-      // expect( function(){ thermostat.increaseTempBy(15) }).toThrowError("Temperature cannot go above 32.");
+      thermostat.isPowerSavingOn = false 
+
+      expect(thermostat.maxTemp()).toBe(32);
+    });
+
+    it("is on, max temperature is 25 degrees", function() {
+      thermostat.isPowerSavingOn = true
+
+      expect(thermostat.maxTemp()).toBe(25);
     });
   });
 });

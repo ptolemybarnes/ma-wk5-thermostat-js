@@ -1,4 +1,4 @@
-#container {
+.container {
   width: 500px;
   height: 500px;
   position: relative;
@@ -8,25 +8,27 @@
   background-color: rgb(176,196,222);
 }
 
-#toptriangle {
-  margin: 0 auto;
-  position: relative;
-  top: 130px;
+#low-usage {
+
+}
+
+.thermostat-elements {
+  margin: auto;
   width: 0;
   height: 0;
+  position: relative;
   border-left: 70px solid transparent;
   border-right: 70px solid transparent;
   border-bottom: 70px solid red;
 }
 
+#toptriangle {
+  top: 130px;
+}
+
 #bottomtriangle {
-  margin: 0 auto;
-  position: relative;
-  top: 230px;
-  width: 0;
-  height: 0;
-  border-left: 70px solid transparent;
-  border-right: 70px solid transparent;
+  top: 115px;
+  border-bottom: 0px;
   border-top: 70px solid red;
 }
 
@@ -35,6 +37,5 @@
   font-size: 100px;
   text-align: center;
   position: relative;
-  /*display: inline;*/
-  top: 200px;
+  top: 120px;
 }

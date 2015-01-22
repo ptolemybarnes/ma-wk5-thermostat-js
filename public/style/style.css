@@ -1,9 +1,4 @@
 
-/*@import url("../js/thermostat.js");*/
-/*@import url("../js/jquery-2.1.3.min.js");*/
-/*@import url("../js/script-jq.js");*/
-/*@import url("../js/script.js");*/
-
 * {
   margin: 0;
   padding: 0;
@@ -47,28 +42,50 @@ svg {
     -webkit-transform-origin-y: 100%;
     -webkit-transform-origin-z: initial;
 }
+
 /*******************************
-    Main page elements
+      Temperature colors
+*******************************/
+.low-usage {
+  color: green;
+}
+
+.medium-usage {
+  color: blue;
+}
+
+.high-usage {
+  color: red;
+}
+
+/*******************************
+    Left page elements
 *******************************/
 #control {
-  margin-top: 40%;
+  margin-top: 5%;
   padding-right: 10px;
+  font-size: 2em;
 }
 
 h1 {
+  margin: 0;
+  padding: 0;
   font-size: 5em;
+  color: blue;
 }
 
 #power-saving-divider {
-  background: black;
   width: 100px;
-  height: 20px;
-  width: 80%;
+  height: 40px;
+  width: 70%;
   float: left;
+  background: blue;
 }
 
 #power-mode-text {
-  width: 20%;
-  float: right;
+  width: 30%;
+  /*min-width: 100px;*/
+  float: left;
+
 }
 

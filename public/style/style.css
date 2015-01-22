@@ -86,6 +86,8 @@ h1 {
   width: 30%;
   /*min-width: 100px;*/
   float: left;
-
 }
 
+.buttons {
+  font-size: 3em;
+}

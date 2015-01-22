@@ -24,4 +24,18 @@ $(document).ready(function() {
   $('#down-button').on('click', function() {
     thermostat.decreaseTempBy(1);
   });
+
+  $('#reset-button').on('click', function() {
+    thermostat.resetButton();
+  });
+
+  $('#on-button').on('click', function() {
+    thermostat.isPowerSavingOn=true;
+  });
+
+  $('#off-button').on('click', function() {
+    thermostat.isPowerSavingOn=false;
+  });
+
+
 });

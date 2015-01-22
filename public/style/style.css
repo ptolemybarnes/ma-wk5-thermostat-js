@@ -8,6 +8,9 @@
   padding: 0;
 }
 
+/********************
+    Main page sides
+*********************/
 #left {
   float: left;
   width: 58%;
@@ -22,6 +25,9 @@
   background-color: black;
 }
 
+/*********************
+      SVG styling
+*********************/
 .degrees-container {
   display: inline-block;
   position: relative;
@@ -40,3 +46,28 @@ svg {
     -webkit-transform-origin-y: 100%;
     -webkit-transform-origin-z: initial;
 }
+/*******************************
+    Main page elements
+*******************************/
+#control {
+  margin-top: 40%;
+  padding-right: 10px;
+}
+
+h1 {
+  font-size: 5em;
+}
+
+#power-saving-divider {
+  background: black;
+  width: 100px;
+  height: 20px;
+  width: 80%;
+  float: left;
+}
+
+#power-mode-text {
+  width: 20%;
+  float: right;
+}
+

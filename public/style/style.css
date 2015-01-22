@@ -26,7 +26,6 @@
   display: inline-block;
   position: relative;
   width: 100%;
-  /*padding-bottom: 100%;*/
   vertical-align: middle;
   overflow: hidden;
   height: 100%;
@@ -34,12 +33,9 @@
 
 
 svg {
-  /*display: inline-block;*/
-  /*position: absolute;*/
-    /*top: 0;*/
-    /*left: 0;*/
     font-size: 18em;
     height: 100%;
+    padding-left: 3%;
     -webkit-transform-origin-x: 100%;
     -webkit-transform-origin-y: 100%;
     -webkit-transform-origin-z: initial;
